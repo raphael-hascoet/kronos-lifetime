@@ -32,7 +32,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: BalooBhaiRegular, "Helvetica Neue", sans-serif;
   overflow: hidden;
 }
 
@@ -44,4 +44,8 @@ body {
 @font-face {
   font-family: BalooBhaiRegular;
   src: url(assets/fonts/BalooBhai2-Regular.ttf);
+}
+
+.repetition-input .mat-form-field-infix {
+  width: auto;
 }

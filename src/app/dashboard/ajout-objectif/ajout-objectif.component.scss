@@ -1,0 +1,51 @@
+.ajout-objectif {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 90vw;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 10px 0;
+  .objectif-input {
+    display: flex;
+    flex-direction: column;
+    font-family: BalooBhaiRegular;
+    width: 100%;
+
+    span {
+      font-size: 1.5em;
+      font-family: BalooBhaiBold;
+    }
+
+    .mat-form-field {
+      font-size: 1.4em;
+      margin-top: -12px;
+    }
+
+    .repetition-input {
+      display: grid;
+      grid-template-columns: 4fr 3fr 3fr;
+
+      span {
+        align-self: center;
+        justify-self: center;
+        font-family: BalooBhaiRegular;
+        font-size: 1.4em;
+      }
+
+      column-gap: 15px;
+    }
+  }
+
+  .ajout-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      width: 40%;
+    }
+  }
+}

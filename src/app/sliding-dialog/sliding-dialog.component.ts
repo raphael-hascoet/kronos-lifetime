@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sliding-dialog',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   animations: [
     trigger('openSlidingDialog', [
       state('true', style({      // final CSS following animation
-        height: '79vh'
+        height: '67vh'
       })),
       state('false', style({
         height: "0"
@@ -20,11 +20,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidingDialogComponent implements OnInit {
 
+  @Input('title') title: string
+
   openState = false;
 
   constructor() { }
 
   ngOnInit() {
+    this.open()
   }
 
   open() {

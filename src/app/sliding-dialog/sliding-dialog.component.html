@@ -2,23 +2,14 @@
 
 <mat-card class="sliding-top-card toolbar" [@openSlidingDialog]="openState">
   <div class="plus-sliding" (click)="open()">
-    <mat-icon class="plus-sliding-icon" [inline]="true">add</mat-icon>
+    <mat-icon class="plus-sliding-icon" [inline]="true"
+      >add_circle_outline</mat-icon
+    >
   </div>
   <div class="sliding-content" (click)="openIfNot()">
-    <mat-card-title>Ajout d'un objectif</mat-card-title>
+    <mat-card-title>{{ title }}</mat-card-title>
     <mat-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
-      eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
-      bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-      tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
-      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-      quis posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper
-      sagittis id vel leo. Integer feugiat faucibus libero, at maximus nisl
-      suscipit posuere. Morbi nec enim nunc. Phasellus bibendum turpis ut ipsum
-      egestas, sed sollicitudin elit convallis. Cras pharetra mi tristique
-      sapien vestibulum lobortis. Nam eget bibendum metus, non dictum mauris.
-      Nulla at tellus sagittis, viverra est a, bibendum metus.
+      <ng-content></ng-content>
     </mat-card-content>
   </div>
 </mat-card>

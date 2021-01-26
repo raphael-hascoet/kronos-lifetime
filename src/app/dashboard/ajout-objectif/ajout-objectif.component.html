@@ -1,0 +1,28 @@
+<app-sliding-dialog title="Ajouter un objectif">
+  <div class="ajout-objectif">
+    <div class="objectif-input">
+      <span>Titre</span>
+      <mat-form-field><input matInput /></mat-form-field>
+    </div>
+
+    <div class="objectif-input">
+      <span>Répétition</span>
+      <div class="repetition-input">
+        <mat-form-field><input matInput /></mat-form-field>
+        <span> heures par </span>
+        <mat-form-field><input matInput /></mat-form-field>
+      </div>
+    </div>
+
+    <button mat-stroked-button color="primary" type="button">
+      Choisir une icône
+    </button>
+
+    <!-- TODO : Partagez le ? -->
+
+    <div class="ajout-buttons">
+      <button mat-raised-button color="primary" type="button">Ajouter</button>
+      <button mat-raised-button color="primary" type="button">Annuler</button>
+    </div>
+  </div>
+</app-sliding-dialog>
