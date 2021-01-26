@@ -8,11 +8,15 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatChipsModule, MatDialogModule, MatIconModule, MatToolbarModule } from '@angular/material';
 import { SlidingDialogComponent } from './sliding-dialog/sliding-dialog.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ObjectifItemComponent } from './dashboard/objectif-item/objectif-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SlidingDialogComponent
+    SlidingDialogComponent,
+    DashboardComponent,
+    ObjectifItemComponent
   ],
   imports: [
     BrowserModule,

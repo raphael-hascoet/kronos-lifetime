@@ -1,0 +1,17 @@
+[
+  {
+    "name": "guitar",
+    "label": "Pratiquer la guitare",
+    "time": "2h30/4h"
+  },
+  {
+    "name": "running",
+    "label": "Faire un jogging",
+    "time": "0h30/2h"
+  },
+  {
+    "name": "working",
+    "label": "Travailler",
+    "time": "4h30/7h"
+  }
+]

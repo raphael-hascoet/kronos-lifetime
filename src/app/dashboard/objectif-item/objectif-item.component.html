@@ -1,0 +1,18 @@
+<div class="objectif-item">
+  <div class="objectif-img-container">
+    <div class="objectif-img">
+      <img [src]="getItemImageUrl()" />
+    </div>
+  </div>
+  <div class="objectif-content">
+    <span class="objectif-title">
+      {{ objectif.label }}
+    </span>
+    <span class="objectif-time">
+      {{ objectif.time }}
+    </span>
+  </div>
+  <div class="objectif-dots">
+    <mat-icon [inline]="true">more_horiz</mat-icon>
+  </div>
+</div>

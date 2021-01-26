@@ -1,0 +1,44 @@
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  color: #33671b;
+
+  .dashboard-header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+
+    .header-settings-icon {
+      mat-icon {
+        font-size: 5vh;
+      }
+    }
+
+    .header-profile-pic {
+      height: 80%;
+      img {
+        border-radius: 999px;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+
+  .dashboard-title {
+    margin-bottom: 15px;
+    span {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-family: BalooBhaiBold;
+    }
+  }
+
+  .objectif-item-list {
+    display: grid;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+  }
+}

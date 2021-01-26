@@ -1,0 +1,38 @@
+.objectif-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 5fr 2fr;
+  .objectif-img-container {
+    .objectif-img {
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 2px 1px #888;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+
+  .objectif-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    .objectif-title {
+      font-size: 1.1em;
+      color: #33671b;
+    }
+    .objectif-time {
+      font-size: 1em;
+      color: #90b578;
+    }
+  }
+
+  .objectif-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mat-icon {
+      font-size: 38px;
+    }
+  }
+}

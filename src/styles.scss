@@ -31,9 +31,17 @@ $kronos-theme: mat-light-theme($kronos-primary, $kronos-accent, $kronos-warn);
 html,
 body {
   height: 100%;
-}
-html,
-body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: BalooBhaiBold;
+  src: url(assets/fonts/BalooBhai2-Bold.ttf);
+}
+
+@font-face {
+  font-family: BalooBhaiRegular;
+  src: url(assets/fonts/BalooBhai2-Regular.ttf);
 }

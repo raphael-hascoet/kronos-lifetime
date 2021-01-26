@@ -10,15 +10,15 @@
 
 .toolbar {
   position: absolute;
-  right: 0px;
-  left: 0px;
+  right: 0;
+  left: 0;
   height: 0;
-  bottom: -7px;
+  bottom: 0;
   overflow: hidden;
 }
 
 .sliding-top-card {
-  width: 101vw;
+  width: 100vw;
   z-index: 100;
 
   box-shadow: 0 -6px 6px -6px black;
