@@ -1,0 +1,11 @@
+@import "~@angular/material/theming";
+@import "./kronos-palette.scss";
+@include mat-core();
+
+$kronos-primary: mat-palette($palette-kronos);
+$kronos-accent: mat-palette($mat-light-green);
+$kronos-warn: mat-palette($mat-deep-orange);
+
+$kronos-theme: mat-light-theme($kronos-primary, $kronos-accent, $kronos-warn);
+
+@include angular-material-theme($kronos-theme);
