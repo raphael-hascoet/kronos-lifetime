@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatChipsModule, MatIconModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatChipsModule, MatDialogModule, MatIconModule, MatToolbarModule } from '@angular/material';
+import { SlidingDialogComponent } from './sliding-dialog/sliding-dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SlidingDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -18,11 +20,14 @@ import { MatButtonModule, MatChipsModule, MatIconModule, MatToolbarModule } from
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatDialogModule,
+    MatCardModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [SlidingDialogComponent]
 })
 export class AppModule { }

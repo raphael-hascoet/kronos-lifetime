@@ -1,0 +1,48 @@
+.behind-sliding {
+  background-color: #000000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sliding-top-card {
+  width: 101vw;
+  position: fixed;
+  z-index: 100;
+
+  box-shadow: 0 -6px 6px -6px black;
+
+  padding: 5vh 0 0 0;
+
+  background-color: #33671b;
+  color: white;
+
+  border-radius: 20px;
+
+  .plus-sliding {
+    position: absolute;
+    top: -2.5vh;
+    left: 47.5vw;
+    z-index: 101;
+    font-size: 5vh;
+    border-radius: 99px;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: #33671b;
+
+    .plus-sliding-icon {
+      color: white;
+    }
+  }
+
+  .sliding-content {
+    background: white;
+    color: black;
+    height: 80vh;
+
+    padding: 2vh 2vw;
+  }
+}
