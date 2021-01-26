@@ -1,0 +1,17 @@
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .duree-input {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    column-gap: 5px;
+    width: 60%;
+
+    span {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}

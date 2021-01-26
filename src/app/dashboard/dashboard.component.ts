@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as objectifs from '../../assets/data/objectifs.json';
+import { DiscussionService } from '../services/discussion.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,9 +11,13 @@ export class DashboardComponent implements OnInit {
 
   objectifs = (objectifs as any).default
 
-  constructor() { }
+  message: string = ""
+
+  constructor(private discussionService: DiscussionService) { }
 
   ngOnInit() {
+    this.discussionService.sendMessage('greet')
+    this.discussionService.discussionObs.subscribe(message => this.message = message)
   }
 
 }

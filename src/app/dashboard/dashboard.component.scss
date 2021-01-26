@@ -11,10 +11,21 @@
     justify-content: space-between;
     padding: 0 0;
 
+    margin-bottom: 10px;
+
     .header-settings-icon {
+      height: 5vh;
       mat-icon {
         font-size: 5vh;
       }
+    }
+
+    .discussion-message {
+      text-align: center;
+      background-color: #33671b;
+      color: white;
+      padding: 0 15px;
+      border-radius: 10px;
     }
 
     .header-profile-pic {

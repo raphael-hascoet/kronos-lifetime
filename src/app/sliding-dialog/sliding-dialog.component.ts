@@ -27,7 +27,6 @@ export class SlidingDialogComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.open()
   }
 
   open() {

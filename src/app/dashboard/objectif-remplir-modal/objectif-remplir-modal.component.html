@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{ objectif.label }}</h2>
+<mat-dialog-content>
+  <span class="subtitle">Combien de temps passé aujourd'hui ?</span>
+  <div class="duree-input">
+    <span>Durée : </span>
+    <mat-form-field
+      class="small-form-field"
+      inputmode="numeric"
+      pattern="[0-9]*"
+      type="number"
+      ><input matInput
+    /></mat-form-field>
+    <span>heures</span>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button mat-raised-button color="primary" (click)="onAjouterClick()">
+    Ajouter
+  </button>
+  <button mat-raised-button color="primary" (click)="onAnnulerClick()">
+    Annuler
+  </button>
+</mat-dialog-actions>

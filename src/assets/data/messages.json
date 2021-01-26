@@ -1,0 +1,11 @@
+{
+  "greet": [
+    "Bonjour Christophe,<br />j'espère que tu vas bien",
+    "Salut Cristophe!\nBon courage pour ta journée !"
+  ],
+  "congratulate": [
+    "Beau boulot aujourd'hui !",
+    "Tu commences à être un expert,\n continue comme ça !",
+    "Beaux efforts récemment,\ntu m'impressionnes !"
+  ]
+}

@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ObjectifItemComponent } from './dashboard/objectif-item/objectif-item.component';
 import { AjoutObjectifComponent } from './dashboard/ajout-objectif/ajout-objectif.component';
 import { FormsModule } from '@angular/forms';
+import { ObjectifRemplirModalComponent } from './dashboard/objectif-remplir-modal/objectif-remplir-modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     SlidingDialogComponent,
     DashboardComponent,
     ObjectifItemComponent,
-    AjoutObjectifComponent
+    AjoutObjectifComponent,
+    ObjectifRemplirModalComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,6 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [SlidingDialogComponent]
+  entryComponents: [ObjectifRemplirModalComponent]
 })
 export class AppModule { }
