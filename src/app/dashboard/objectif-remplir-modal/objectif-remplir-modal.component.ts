@@ -15,10 +15,10 @@ export class ObjectifRemplirModalComponent implements OnInit {
   }
 
   onAjouterClick() {
-    this.dialogRef.close()
+    this.dialogRef.close({ added: true })
   }
   onAnnulerClick() {
-    this.dialogRef.close()
+    this.dialogRef.close({ added: false })
   }
 
 }

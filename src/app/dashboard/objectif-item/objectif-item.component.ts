@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
+import { DiscussionService } from 'src/app/services/discussion.service';
 import { ObjectifRemplirModalComponent } from '../objectif-remplir-modal/objectif-remplir-modal.component';
 
 @Component({
@@ -12,7 +13,7 @@ export class ObjectifItemComponent implements OnInit {
   @Input('objectif') objectif: any
 
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public discussionService: DiscussionService) { }
 
   ngOnInit() {
   }
@@ -24,6 +25,12 @@ export class ObjectifItemComponent implements OnInit {
   openRemplirDialog() {
     const dialogRef = this.dialog.open(ObjectifRemplirModalComponent, {
       data: this.objectif
+    })
+
+    dialogRef.afterClosed().subscribe(data => {
+      if (data && data.added) {
+        this.discussionService.sendMessage('congratulate')
+      }
     })
   }
 }

@@ -6,9 +6,9 @@ import * as messages from "../../assets/data/messages.json"
 })
 export class DiscussionService {
 
-  messages = (messages as any).default as { [key: string]: string[] }
+  messages = (messages as any).default as { [key: string]: string[][] }
 
-  private discussionSubject = new BehaviorSubject<string>("Bonjour !")
+  private discussionSubject = new BehaviorSubject<string[]>(["Bonjour !"])
   discussionObs = this.discussionSubject.asObservable()
 
   constructor() { }

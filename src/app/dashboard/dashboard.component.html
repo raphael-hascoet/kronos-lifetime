@@ -3,8 +3,10 @@
     <div class="header-settings-icon">
       <mat-icon [inline]="true" color="primary">settings</mat-icon>
     </div>
-    <div class="discussion-message">
-      <p [innerHTML]="message"></p>
+    <div class="discussion-message" #messageContainer>
+      <span *ngFor="let messagePart of message">
+        {{ messagePart }}
+      </span>
     </div>
     <div class="header-profile-pic">
       <img src="assets/images/photo-profil.png" />

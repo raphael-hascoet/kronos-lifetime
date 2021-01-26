@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
 
   objectifs = (objectifs as any).default
 
-  message: string = ""
+  message: string[] = [""]
 
   constructor(private discussionService: DiscussionService) { }
 
