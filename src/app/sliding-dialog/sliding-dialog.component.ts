@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   animations: [
     trigger('openSlidingDialog', [
       state('true', style({      // final CSS following animation
-        top: '20vh'
+        height: '79vh'
       })),
       state('false', style({
-        top: '97vh'
+        height: "0"
       })),
       transition('true => false', animate('500ms linear')),  // animation timing
       transition('false => true', animate('500ms linear'))

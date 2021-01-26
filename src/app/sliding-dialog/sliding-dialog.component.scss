@@ -8,9 +8,17 @@
   height: 100%;
 }
 
+.toolbar {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  height: 0;
+  bottom: -7px;
+  overflow: hidden;
+}
+
 .sliding-top-card {
   width: 101vw;
-  position: fixed;
   z-index: 100;
 
   box-shadow: 0 -6px 6px -6px black;
@@ -20,11 +28,11 @@
   background-color: #33671b;
   color: white;
 
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 
   .plus-sliding {
     position: absolute;
-    top: -2.5vh;
+    top: 0;
     left: 47.5vw;
     z-index: 101;
     font-size: 5vh;
@@ -41,7 +49,7 @@
   .sliding-content {
     background: white;
     color: black;
-    height: 80vh;
+    height: 75vh;
 
     padding: 2vh 2vw;
   }

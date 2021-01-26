@@ -1,6 +1,6 @@
 <div *ngIf="openState" class="behind-sliding" (click)="open()"></div>
 
-<mat-card class="sliding-top-card" [@openSlidingDialog]="openState">
+<mat-card class="sliding-top-card toolbar" [@openSlidingDialog]="openState">
   <div class="plus-sliding" (click)="open()">
     <mat-icon class="plus-sliding-icon" [inline]="true">add</mat-icon>
   </div>
