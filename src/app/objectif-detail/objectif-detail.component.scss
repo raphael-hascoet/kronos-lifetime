@@ -1,0 +1,73 @@
+.objectif-page {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  color: #33671b;
+  height: 100%;
+
+  .objectif-header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+
+    margin-bottom: 10px;
+
+    .header-close-icon {
+      height: 5vh;
+      mat-icon {
+        font-size: 5vh;
+      }
+    }
+  }
+
+  .objectif-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100% - 23vh);
+    .current-objectif {
+      background-color: #33671b;
+      border-radius: 15px;
+      width: 80vw;
+      padding: 15px;
+
+      display: flex;
+      justify-content: space-evenly;
+
+      .current-objectif-texts {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .current-objectif-label {
+          font-family: BalooBhaiBold;
+          font-size: 1.3em;
+        }
+
+        .current-objectif-value {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  .objectif-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 13vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    button {
+      height: 60%;
+      font-size: 1.1em;
+    }
+  }
+}

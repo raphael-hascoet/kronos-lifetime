@@ -1,0 +1,24 @@
+<div class="objectif-page">
+  <header class="objectif-header">
+    <h2 mat-card-title color="primary">{{ objectif.label }}</h2>
+    <div class="header-close-icon" routerLink="">
+      <mat-icon [inline]="true" color="primary">close</mat-icon>
+    </div>
+  </header>
+
+  <div class="objectif-content">
+    <div class="current-objectif">
+      <div class="current-objectif-texts">
+        <span class="current-objectif-label">Objectif</span>
+        <span class="current-objectif-value">{{ objectif.objectif }}</span>
+      </div>
+
+      <img [src]="imageUrl" />
+    </div>
+  </div>
+
+  <div class="objectif-footer">
+    <button mat-raised-button color="primary">Modifier</button>
+    <button mat-raised-button color="primary" routerLink="">Supprimer</button>
+  </div>
+</div>

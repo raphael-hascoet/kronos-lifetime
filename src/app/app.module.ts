@@ -13,6 +13,7 @@ import { ObjectifItemComponent } from './dashboard/objectif-item/objectif-item.c
 import { AjoutObjectifComponent } from './dashboard/ajout-objectif/ajout-objectif.component';
 import { FormsModule } from '@angular/forms';
 import { ObjectifRemplirModalComponent } from './dashboard/objectif-remplir-modal/objectif-remplir-modal.component';
+import { ObjectifDetailComponent } from './objectif-detail/objectif-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ObjectifRemplirModalComponent } from './dashboard/objectif-remplir-moda
     DashboardComponent,
     ObjectifItemComponent,
     AjoutObjectifComponent,
-    ObjectifRemplirModalComponent
+    ObjectifRemplirModalComponent,
+    ObjectifDetailComponent
   ],
   imports: [
     BrowserModule,

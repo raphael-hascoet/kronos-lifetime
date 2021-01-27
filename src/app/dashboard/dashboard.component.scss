@@ -1,14 +1,16 @@
-.dashboard-content {
+.dashboard-page {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 10px 0;
   color: #33671b;
 
   .dashboard-header {
     height: 10vh;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: 1.5fr 3.5fr 1.5fr;
+
     padding: 0 0;
 
     margin-bottom: 10px;
@@ -26,8 +28,8 @@
       color: white;
       padding: 0 15px;
       border-radius: 10px;
-      width: 50vw;
-      height: 100%;
+      width: calc(100% - 30px);
+      height: 10vh;
 
       font-size: calc(1.2vh + 2vw);
       line-height: calc(1.2vh + 2vw);
@@ -39,7 +41,7 @@
     }
 
     .header-profile-pic {
-      height: 80%;
+      height: 8vh;
       img {
         border-radius: 999px;
         width: auto;
@@ -48,18 +50,21 @@
     }
   }
 
-  .dashboard-title {
-    margin-bottom: 15px;
-    span {
-      font-size: 1.5em;
-      font-weight: bold;
-      font-family: BalooBhaiBold;
+  .dashboard-content {
+    padding: 0 20px;
+    .dashboard-title {
+      margin-bottom: 15px;
+      span {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: BalooBhaiBold;
+      }
     }
-  }
 
-  .objectif-item-list {
-    display: grid;
-    grid-auto-rows: 1fr;
-    row-gap: 20px;
+    .objectif-item-list {
+      display: grid;
+      grid-auto-rows: 1fr;
+      row-gap: 20px;
+    }
   }
 }

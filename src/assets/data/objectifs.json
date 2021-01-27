@@ -2,16 +2,19 @@
   {
     "name": "guitar",
     "label": "Pratiquer la guitare",
-    "time": "2h30/4h"
+    "time": "0h30/2h",
+    "objectif": "2h / jour"
   },
   {
     "name": "running",
     "label": "Faire un jogging",
-    "time": "0h30/2h"
+    "time": "2h30/4h",
+    "objectif": "4h / semaine"
   },
   {
     "name": "working",
     "label": "Travailler",
-    "time": "4h30/7h"
+    "time": "4h30/7h",
+    "objectif": "7h / jour"
   }
 ]

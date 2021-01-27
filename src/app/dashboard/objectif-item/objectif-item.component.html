@@ -1,7 +1,7 @@
 <div class="objectif-item" (click)="openRemplirDialog()">
   <div class="objectif-img-container">
     <div class="objectif-img">
-      <img [src]="getItemImageUrl()" />
+      <img [src]="imageUrl" />
     </div>
   </div>
   <div class="objectif-content">
@@ -12,7 +12,7 @@
       {{ objectif.time }}
     </span>
   </div>
-  <div class="objectif-dots">
+  <div class="objectif-dots" routerLink="/objectif/{{ objectif.name }}">
     <mat-icon [inline]="true">more_horiz</mat-icon>
   </div>
 </div>
