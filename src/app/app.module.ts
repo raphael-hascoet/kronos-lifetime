@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ChartsModule, ThemeService } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -14,6 +14,7 @@ import { AjoutObjectifComponent } from './dashboard/ajout-objectif/ajout-objecti
 import { FormsModule } from '@angular/forms';
 import { ObjectifRemplirModalComponent } from './dashboard/objectif-remplir-modal/objectif-remplir-modal.component';
 import { ObjectifDetailComponent } from './objectif-detail/objectif-detail.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ObjectifDetailComponent } from './objectif-detail/objectif-detail.compo
     ObjectifItemComponent,
     AjoutObjectifComponent,
     ObjectifRemplirModalComponent,
-    ObjectifDetailComponent
+    ObjectifDetailComponent,
+    StatsComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,13 +38,14 @@ import { ObjectifDetailComponent } from './objectif-detail/objectif-detail.compo
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    ChartsModule,
     MatTabsModule,
     FormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent],
   entryComponents: [ObjectifRemplirModalComponent]
 })

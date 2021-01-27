@@ -1,0 +1,16 @@
+<div>
+<div>
+    <div style="display: block;width: 1000px;height: 1000px;">
+    <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+    </canvas>
+    <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+    </div>
+    
+    </div>
+</div>
