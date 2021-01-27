@@ -8,7 +8,6 @@ import { StatsComponent } from './stats/stats.component';
 
 const routes: Routes = [
   { path: "dashboard", component: DashboardComponent },
-  { path: "dashboard/stats", component: StatsComponent },
   { path: "objectif/:objectif", component: ObjectifDetailComponent, canActivate: [SetCurrentObjectifGuard] },
   { path: '**', redirectTo: "dashboard" }
 ];
