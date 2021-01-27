@@ -12,17 +12,35 @@
       <img src="assets/images/photo-profil.png" />
     </div>
   </header>
-  <div class="dashboard-content">
-    <div class="dashboard-title">
-      <span>Dashboard</span>
-    </div>
-    <div class="objectif-item-list">
-      <app-objectif-item
-        *ngFor="let objectif of objectifs"
-        [objectif]="objectif"
-      ></app-objectif-item>
-    </div>
-  </div>
+
+  <mat-tab-group mat-stretch-tabs (selectedTabChange)="tabChanged($event)">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon" [inline]="true">list</mat-icon>
+      </ng-template>
+      <div class="tab-content dashboard-content">
+        <div class="tab-title">
+          <span>Dashboard</span>
+        </div>
+        <div class="objectif-item-list">
+          <app-objectif-item
+            *ngFor="let objectif of objectifs"
+            [objectif]="objectif"
+          ></app-objectif-item>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon" [inline]="true">assessment</mat-icon>
+      </ng-template>
+      <div class="tab-content stats-content">
+        <div class="tab-title">
+          <span>Stats</span>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
 </div>
 
-<app-ajout-objectif></app-ajout-objectif>
+<app-ajout-objectif *ngIf="currentTab === 0"></app-ajout-objectif>

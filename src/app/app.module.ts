@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatChipsModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatChipsModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule, MatToolbarModule, MatTabsModule } from '@angular/material';
 import { SlidingDialogComponent } from './sliding-dialog/sliding-dialog.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ObjectifItemComponent } from './dashboard/objectif-item/objectif-item.component';
@@ -36,6 +36,7 @@ import { ObjectifDetailComponent } from './objectif-detail/objectif-detail.compo
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatTabsModule,
     FormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
