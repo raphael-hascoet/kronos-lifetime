@@ -24,8 +24,9 @@
 
   .objectif-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     height: calc(100% - 23vh);
     .current-objectif {
@@ -50,6 +51,28 @@
 
         .current-objectif-value {
           font-size: 1.1em;
+        }
+      }
+    }
+
+    .objectif-content-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .objectif-small-title {
+        font-size: 1.4em;
+      }
+
+      &.objectif-progres {
+        img {
+          height: 25vh;
+        }
+      }
+
+      &.objectif-badges {
+        img {
+          height: 12vh;
         }
       }
     }
