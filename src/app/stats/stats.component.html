@@ -1,11 +1,11 @@
 <div>
   <div>
-    <div style="display: block; width: 800px; height: 800px">
+    <div style="display: block; width: 400px; height: 800px">
       <canvas
         baseChart
         [colors]="chartColors"
-        [datasets]="barChartData"
-        [labels]="barChartLabels"
+        [datasets]="currentData"
+        [labels]="currentBarChartLabels"
         [options]="barChartOptions"
         [plugins]="barChartPlugins"
         [legend]="barChartLegend"
@@ -20,8 +20,12 @@
       >
         Update
       </button>
-      <!-- <button mat-button (click)="leftArrow()"><mat-icon>keyboard_arrow_left</mat-icon></button>
-      <button mat-button (click)="rightArrow"><mat-icon>keyboard_arrow_right</mat-icon></button> -->
+      <button mat-button (click)="leftArrow()" [disabled]="currentPos === 0">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+      <button mat-button (click)="rightArrow()" [disabled]="currentPos === 1">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
     </div>
   </div>
 </div>

@@ -55,10 +55,12 @@ export class StatsComponent implements OnInit {
     { data: [1, 1, 1, 1, 1, 1, 1], label: 'Footing', stack: 'a' }
   ];
 
-  currentBarChartData: ChartDataSets[] = [
-    { data: [1, 1, 1, 1], label: 'Netflix', stack: 'a' },
-    { data: [1, 1, 1, 1], label: 'Footing', stack: 'a' }
-  ];
+
+  currentPos = 0
+
+  currentBarChartLabels = this.barChartLabels.slice(0, 4)
+
+  currentData = this.barChartData.map(data => { const newData = data.data.slice(0, 4); return { data: newData, ...data } })
 
   constructor() { }
 
@@ -83,5 +85,36 @@ export class StatsComponent implements OnInit {
       Math.round((Math.random() * 8)),
       Math.round((Math.random() * 8)),
       Math.round((Math.random() * 8))];
+
+    if (this.currentPos === 1) {
+
+      this.currentData = this.barChartData.map(data => { const newData = data.data.slice(0, 4); return { data: newData, ...data } })
+    }
+    if (this.currentPos === 0) {
+      this.currentData = this.barChartData.map(data => { const newData = data.data.slice(4, 7); return { data: newData, ...data } })
+    }
+
+  }
+
+  leftArrow() {
+    if (this.currentPos === 1) {
+
+      this.currentBarChartLabels = this.barChartLabels.slice(0, 4)
+      this.currentData = this.barChartData.map(data => { const newData = data.data.slice(0, 4); return { data: newData, ...data } })
+
+
+      this.currentPos = 0
+    }
+  }
+
+  rightArrow() {
+    if (this.currentPos === 0) {
+
+      this.currentBarChartLabels = this.barChartLabels.slice(4, 7)
+
+      this.currentData = this.barChartData.map(data => { const newData = data.data.slice(4, 7); return { data: newData, ...data } })
+
+      this.currentPos = 1
+    }
   }
 }
