@@ -19,6 +19,7 @@
 
 .sliding-top-card {
   width: 100vw;
+  max-width: 500px;
   z-index: 100;
 
   box-shadow: 0 -6px 6px -6px black;
@@ -33,7 +34,7 @@
   .plus-sliding {
     position: absolute;
     top: 0;
-    left: calc(50vw - 2.5vh);
+    left: min(calc(50vw - 2.5vh), calc(250px - 2.5vh));
     z-index: 101;
     font-size: 5vh;
     border-radius: 99px;

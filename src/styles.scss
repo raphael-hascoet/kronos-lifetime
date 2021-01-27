@@ -36,6 +36,10 @@ body {
   overflow: hidden;
 }
 
+body {
+  max-width: 500px;
+}
+
 @font-face {
   font-family: BalooBhaiBold;
   src: url(assets/fonts/BalooBhai2-Bold.ttf);
@@ -48,4 +52,11 @@ body {
 
 .small-form-field .mat-form-field-infix {
   width: auto;
+}
+
+.cdk-overlay-pane {
+  position: absolute !important;
+  left: min(7vw, 25px);
+  width: 87vw;
+  max-width: 450px !important;
 }
