@@ -12,7 +12,12 @@ export class StatsComponent implements OnInit {
     public barChartOptions: ChartOptions = {
       responsive: true,
       // We use these empty structures as placeholders for dynamic theming.
-      scales: { xAxes: [{}], yAxes: [{}] },
+      scales: { xAxes: [{}], yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Nombre d\'heures'
+       }
+      }] },
       plugins: {
         datalabels: {
           anchor: 'end',
@@ -26,8 +31,8 @@ export class StatsComponent implements OnInit {
     public barChartPlugins = [pluginDataLabels];
   
     public barChartData: ChartDataSets[] = [
-      { data: [24,24,24,24,24,24,24], label: 'Netflix' },
-      { data: [24,24,24,24,24,24,24], label: 'Youtube' }
+      { data: [1,1,1,1,1,1,1], label: 'Netflix', stack:'a' },
+      { data: [1,1,1,1,1,1,1], label: 'Youtube', stack:'a' }
     ];
   
     constructor() { }
@@ -36,23 +41,22 @@ export class StatsComponent implements OnInit {
     }
   
     public randomize(): void {
-      // Only Change 3 values
       this.barChartData[0].data = [
-        Math.round(Math.random() * 24),
-        10,
-        6,
-        (Math.random() * 24),
-        2,
-        (Math.random() * 24),
-        5 ];
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)) ];
         this.barChartData[1].data = [
-          Math.round(Math.random() * 24),
-          9,
-          (Math.random() * 24),
-          (Math.random() * 24),
-          (Math.random() * 24),
-          (Math.random() * 24),
-          (Math.random() * 24) ];
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)),
+          Math.round((Math.random() * 8)) ];
       
       }
   }
