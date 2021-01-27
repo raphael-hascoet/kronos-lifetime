@@ -7,5 +7,10 @@
     ["Beau boulot aujourd'hui !"],
     ["Tu commences à être un expert,", "continue comme ça !"],
     ["Beaux efforts récemment,", "tu m'impressionnes !"]
+  ],
+  "stats": [
+    ["-15% de temps devant Netflix", "par rapport à la semaine dernière !"],
+    ["Une grosse journée Youtube hier,", "un petite balade aujourd'hui ?"],
+    ["Vous êtes dans le top 10%", "des joueurs de guitare cette semaine !"]
   ]
 }

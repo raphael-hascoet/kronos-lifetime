@@ -24,6 +24,12 @@ export class DashboardComponent implements OnInit {
 
   tabChanged(event) {
     this.currentTab = event.index
+
+    if (this.currentTab === 0) {
+      this.discussionService.sendMessage('greet')
+    } else if (this.currentTab === 1) {
+      this.discussionService.sendMessage('stats')
+    }
   }
 
 }
