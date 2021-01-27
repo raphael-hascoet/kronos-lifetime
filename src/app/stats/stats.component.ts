@@ -29,10 +29,28 @@ export class StatsComponent implements OnInit {
     public barChartType: ChartType = 'bar';
     public barChartLegend = true;
     public barChartPlugins = [pluginDataLabels];
+
+    public chartColors: Array<any> = [
+      { // first color
+        backgroundColor: 'rgba(225,10,24,0.4)',
+        borderColor: 'rgba(225,10,24,0.4)',
+        pointBackgroundColor: 'rgba(225,10,24,0.4)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(225,10,24,0.4)'
+      },
+      { // second color
+        backgroundColor: 'rgba(144,181,120,0.6)',
+        borderColor: 'rgba(144,181,120,0.6)',
+        pointBackgroundColor: 'rgba(144,181,120,0.6)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(144,181,120,0.6)'
+      }];
   
     public barChartData: ChartDataSets[] = [
       { data: [1,1,1,1,1,1,1], label: 'Netflix', stack:'a' },
-      { data: [1,1,1,1,1,1,1], label: 'Youtube', stack:'a' }
+      { data: [1,1,1,1,1,1,1], label: 'Footing', stack:'a' }
     ];
   
     constructor() { }
