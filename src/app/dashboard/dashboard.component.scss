@@ -50,9 +50,14 @@
     }
   }
 
-  .dashboard-content {
-    padding: 0 20px;
-    .dashboard-title {
+  .tab-icon {
+    font-size: 33px;
+    color: #33671b;
+  }
+
+  .tab-content {
+    padding: 10px 20px 0 20px;
+    .tab-title {
       margin-bottom: 15px;
       span {
         font-size: 1.5em;

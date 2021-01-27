@@ -13,11 +13,17 @@ export class DashboardComponent implements OnInit {
 
   message: string[] = [""]
 
+  currentTab = 0
+
   constructor(private discussionService: DiscussionService) { }
 
   ngOnInit() {
     this.discussionService.sendMessage('greet')
     this.discussionService.discussionObs.subscribe(message => this.message = message)
+  }
+
+  tabChanged(event) {
+    this.currentTab = event.index
   }
 
 }
